@@ -74,7 +74,6 @@ print("\033c")
 if os.path.exists(temp_folder + video_id + ".mp4"):
     print('\033[92m' + "The video is already downloaded! Continuing with the next step..." + '\033[0m')
 else:
-    # example url https://rr3---sn-t0a7lnee.googlevideo.com/videoplayback?expire=1685846516&ei=lKV7ZPzdIsyU_9EP9ZCJwAQ&ip=167.114.211.189&id=o-AERBqFDDxlmxaytYa_VOp8ZeTGWr5NdoY45gXJq1e6wY&itag=22&source=youtube&requiressl=yes&mh=ca&mm=31%2C29&mn=sn-t0a7lnee%2Csn-t0a7sn7d&ms=au%2Crdu&mv=m&mvi=3&pl=23&pcm2=yes&initcwndbps=216250&spc=qEK7Bw_s1p-FxMkTucw9g4dg-FNV-sg&vprv=1&svpuc=1&mime=video%2Fmp4&cnr=14&ratebypass=yes&dur=22.058&lmt=1657030008993876&mt=1685824601&fvip=4&fexp=24007246%2C24363392&beids=24350017&c=ANDROID&txp=5318224&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cpcm2%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRQIgfPqbeX70YHAgPSNOtGyBk3LXw-RoGXbWpnzVGkKmPZQCIQCl7iS5KLmE0H3rLr1s_AkFqzI40C2FWDapOkOuhh15Sg%3D%3D&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AG3C_xAwRQIhAPp_KaPLc_W7MZVoeUEAup5UEbFfaOZCpGKuIoQwJpHnAiAt_CLDsrLvmsjMA2xO_EFepST_M2vAUjhDt4eol1PMkA%3D%3D&host=rr3---sn-t0a7lnee.googlevideo.com
     # download the file to the temp folder
     urllib.request.urlretrieve(download_url, temp_folder + video_id + ".mp4", reporthook=lambda blocknum, blocksize, totalsize: 
                                # print a progress bar like this: [=====>    50%]
